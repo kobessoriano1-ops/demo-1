@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovatePro - Future Tech Solutions</title>
+    <!-- Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter for general text, Noto Serif SC for a touch of elegance (Simplified Chinese support) --><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF; /* White background */
+            color: #333333; /* Dark gray for text */
+        }
+        h1, h2, h3 {
+            font-family: 'Noto Serif SC', serif; /* Use for headings to give a subtle cultural nod */
+        }
+        .text-red-primary { color: #EE0000; } /* Strong Red */
+        .bg-red-primary { background-color: #EE0000; }
+        .hover\:bg-red-dark { background-color: #CC0000; } /* Darker Red on hover */
+        .border-red-primary { border-color: #EE0000; }
+        .text-gold-accent { color: #FFD700; } /* Gold accent */
+        .bg-gold-accent { background-color: #FFD700; }
+        .hover\:bg-gold-dark { background-color: #E6C200; } /* Darker Gold on hover */
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        @media (max-width: 768px) {
+            .section-padding {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation --><header class="bg-white shadow-sm py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-3xl font-bold text-red-primary">Innovate<span class="text-gold-accent">Pro</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="text-gray-600 hover:text-red-primary font-medium transition duration-300">Features</a>
+                <a href="#about" class="text-gray-600 hover:text-red-primary font-medium transition duration-300">About Us</a>
+                <a href="#pricing" class="text-gray-600 hover:text-red-primary font-medium transition duration-300">Pricing</a>
+                <a href="#contact" class="text-gray-600 hover:text-red-primary font-medium transition duration-300">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-red-primary hover:bg-red-dark text-white font-semibold py-2 px-6 rounded-full transition duration-300 shadow-md">Get Started</a>
+            
+            <!-- Mobile Menu Button --><button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) --><div id="mobile-menu" class="hidden md:hidden bg-white mt-2 py-4 px-6 shadow-lg">
+            <nav class="flex flex-col space-y-4">
+                <a href="#features" class="text-gray-700 hover:text-red-primary font-medium transition duration-300">Features</a>
+                <a href="#about" class="text-gray-700 hover:text-red-primary font-medium transition duration-300">About Us</a>
+                <a href="#pricing" class="text-gray-700 hover:text-red-primary font-medium transition duration-300">Pricing</a>
+                <a href="#contact" class="text-gray-700 hover:text-red-primary font-medium transition duration-300">Contact</a>
+                <a href="#contact" class="bg-red-primary hover:bg-red-dark text-white font-semibold py-2 px-6 rounded-full text-center transition duration-300 shadow-md mt-4">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section --><section class="relative bg-white py-20 md:py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <!-- Left Content Area --><div class="text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-gray-800">
+                    Innovate. <span class="text-red-primary">Prosper.</span> Succeed.
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                    Unlocking potential with cutting-edge AI and data solutions for modern businesses.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                    <a href="#contact" class="bg-red-primary hover:bg-red-dark text-white font-bold py-4 px-8 rounded-full text-lg shadow-xl transition transform hover:-translate-y-1 duration-300">
+                        Get Your Free Demo
+                    </a>
+                    <a href="#features" class="bg-white border-2 border-red-primary text-red-primary hover:bg-red-primary hover:text-white font-bold py-4 px-8 rounded-full text-lg shadow-xl transition transform hover:-translate-y-1 duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <!-- Right Image Area --><div class="relative flex justify-center md:justify-end">
+                 <img src="technology.jpg" alt="Abstract tech illustration" class="w-full max-w-lg rounded-xl shadow-2xl animate-fade-in-up">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section --><section id="features" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Powerful Features to Elevate Your Business</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Discover how InnovatePro's integrated suite of tools can revolutionize your operations.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 --><div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-primary transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-primary mb-4 text-5xl flex justify-center">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM6 10a1 1 0 110 2H5a1 1 0 110-2h1zm7-1a1 1 0 00-1 1v2a1 1 0 102 0v-2a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">AI-Driven Analytics</h3>
+                    <p class="text-gray-600">Gain deep insights with intelligent data analysis, predicting trends and optimizing strategies.</p>
+                </div>
+                <!-- Feature 2 --><div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gold-accent transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-gold-accent mb-4 text-5xl flex justify-center">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 7.502a4 4 0 00-7.86 0L.2 16h19.6L12.93 7.502z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Automated Workflows</h3>
+                    <p class="text-gray-600">Streamline repetitive tasks and boost productivity across your entire organization.</p>
+                </div>
+                <!-- Feature 3 --><div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-primary transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-primary mb-4 text-5xl flex justify-center">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v4a1 1 0 102 0V7zm-1 9a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Secure Cloud Solutions</h3>
+                    <p class="text-gray-600">Protect your data with industry-leading security and highly reliable cloud infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section --><section id="about" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative flex justify-center md:justify-start">
+                <img src="teamcollab.jpg" alt="Team collaborating" class="w-full max-w-lg rounded-xl shadow-2xl animate-fade-in-right">
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About InnovatePro</h2>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    At InnovatePro, we believe in the power of innovation to drive growth and efficiency. Founded on the principles of reliability, security, and user-centric design, we're a team of passionate technologists committed to delivering unparalleled solutions.
+                </p>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Our mission is to empower businesses, big or small, to harness the full potential of advanced technology, transforming challenges into opportunities for success.
+                </p>
+                <a href="#contact" class="bg-red-primary hover:bg-red-dark text-white font-bold py-3 px-7 rounded-full text-lg shadow-md transition duration-300">
+                    Join Our Vision
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Quote Section --><section class="section-padding bg-red-primary text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6 leading-tight">
+                "The future belongs to those who innovate."
+            </h2>
+            <p class="text-xl opacity-90 mb-8">
+                InnovatePro is your partner in building that future, today.
+            </p>
+            <a href="#contact" class="bg-gold-accent hover:bg-gold-dark text-red-primary font-bold py-4 px-8 rounded-full text-lg shadow-xl transition transform hover:-translate-y-1 duration-300">
+                Start Your Innovation Journey
+            </a>
+        </div>
+    </section>
+
+    <!-- Pricing Section --><section id="pricing" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Simple, Transparent Pricing</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Choose a plan that scales with your business needs, with no hidden fees.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan --><div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gray-300 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Basic</h3>
+                    <p class="text-5xl font-extrabold text-red-primary mb-6">
+                        $29<span class="text-xl text-gray-500">/month</span>
+                    </p>
+                    <ul class="text-gray-600 text-left space-y-3 mb-8">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-red-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Basic Analytics</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-red-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>5 Automated Workflows</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-red-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Standard Support</li>
+                    </ul>
+                    <a href="#contact" class="block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-full transition duration-300">Choose Plan</a>
+                </div>
+                <!-- Pro Plan (Highlighted) --><div class="bg-red-primary text-white p-8 rounded-xl shadow-xl border-t-4 border-gold-accent transform scale-105 transition-transform duration-300 relative">
+                    <span class="absolute top-0 right-0 -mt-4 -mr-4 bg-gold-accent text-red-primary text-xs font-bold px-3 py-1 rounded-full shadow-lg">Popular</span>
+                    <h3 class="text-3xl font-bold mb-4">Pro</h3>
+                    <p class="text-5xl font-extrabold text-gold-accent mb-6">
+                        $79<span class="text-xl text-white opacity-90">/month</span>
+                    </p>
+                    <ul class="text-white text-left space-y-3 mb-8">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-gold-accent mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Advanced AI Analytics</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-gold-accent mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Unlimited Workflows</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-gold-accent mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Premium 24/7 Support</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-gold-accent mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Custom Integrations</li>
+                    </ul>
+                    <a href="#contact" class="block bg-gold-accent hover:bg-gold-dark text-red-primary font-bold py-3 px-6 rounded-full transition duration-300 shadow-lg">Go Pro!</a>
+                </div>
+                <!-- Enterprise Plan --><div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gray-300 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Enterprise</h3>
+                    <p class="text-5xl font-extrabold text-red-primary mb-6">
+                        Custom
+                    </p>
+                    <ul class="text-gray-600 text-left space-y-3 mb-8">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-red-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Everything in Pro</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-red-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Dedicated Account Manager</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-red-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>On-site Training & Support</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-red-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>White-label Solutions</li>
+                    </ul>
+                    <a href="#contact" class="block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-full transition duration-300">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section --><section id="contact" class="section-padding bg-red-primary text-white">
+        <div class="max-w-xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+            <p class="text-lg mb-8 opacity-90">
+                Ready to transform your business? Fill out the form below or contact us directly.
+            </p>
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-4 rounded-lg bg-red-800 border border-red-700 text-white placeholder-red-300 focus:outline-none focus:ring-2 focus:ring-gold-accent" required>
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-4 rounded-lg bg-red-800 border border-red-700 text-white placeholder-red-300 focus:outline-none focus:ring-2 focus:ring-gold-accent" required>
+                </div>
+                <div>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" class="w-full p-4 rounded-lg bg-red-800 border border-red-700 text-white placeholder-red-300 focus:outline-none focus:ring-2 focus:ring-gold-accent" required></textarea>
+                </div>
+                <button type="submit" class="bg-gold-accent hover:bg-gold-dark text-red-primary font-bold py-4 px-8 rounded-full text-lg shadow-xl transition transform hover:-translate-y-1 duration-300 w-full">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer --><footer class="bg-gray-900 text-gray-400 py-10">
+        <div class="max-w-7xl mx-auto px-6 text-center md:flex md:justify-between md:items-center">
+            <p class="mb-4 md:mb-0">&copy; 2024 InnovatePro. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-red-primary transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-red-primary transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu --><script>
+        document.getElementById('mobile-menu-button').onclick = function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
